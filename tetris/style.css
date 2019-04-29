@@ -1,0 +1,32 @@
+
+body {
+  background: #202028;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+canvas {
+  border: solid .2em #fff;
+  height: 90vh;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row
+}
+
+#score{
+  display: inline;
+}
+
+#timer{
+  display: inline;
+}
