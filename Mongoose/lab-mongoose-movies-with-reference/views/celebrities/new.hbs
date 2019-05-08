@@ -1,0 +1,19 @@
+<h2>Add Celebrity</h2>
+
+<form action="/celebrity/new" method="post">
+  <label for="">Name:</label>
+  <input type="text" name="name">
+
+  <label for="">Occupation:</label>
+  <input type="text" name="occupation">
+
+  <label for="">Movies:</label>
+  <select name="movies" multiple>
+    {{#each movies}}
+        <option value={{_id}}>{{title}}</option>
+    {{/each}}
+  </select>
+  {{!-- <input type="text" name="movies"> --}}
+
+  <button type="submit">Add Celebrity</button>
+</form>

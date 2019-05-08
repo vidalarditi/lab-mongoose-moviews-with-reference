@@ -1,0 +1,10 @@
+<h2>{{celebrity.name}}</h2>
+
+<p>Occupation: {{celebrity.occupation}}</p>
+
+<p>Movies:</p>
+<ul>
+  {{#each celebrity.movies}}
+  <li>{{this.title}}</li>
+  {{/each}}
+</ul>
